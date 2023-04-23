@@ -1,4 +1,4 @@
-**Date: ** standup_date
+**Date:** standup_date
 
 | Name     | Priorities | Progress  | Problems |
 | -------- | ---------- | --------- | -------  |
