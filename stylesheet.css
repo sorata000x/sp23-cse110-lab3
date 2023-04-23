@@ -1,0 +1,126 @@
+/* General Font Formatting */
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    padding: 0px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 14pt;
+}
+
+div > div {
+    font-size: 1em;
+}
+
+h1 + hr {
+    max-width: 16cm;
+}
+
+h2 ~ hr {
+    max-width: 16cm;
+}
+
+div a {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 2ex;
+}
+
+a:link {
+    color: #525252;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background-color: rgb(240, 240, 240);
+    text-decoration: none;
+}
+
+a:active {
+    background-color: rgb(220, 220, 220);
+}
+
+div.short {
+    padding: 5px;
+    display: block;
+}
+
+ul > li {
+    margin: 10px 0;
+}
+
+table {
+    min-width: 100px;
+}
+
+table, th, td {
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: rgb(180, 180, 180);
+    border-width: 1px;
+}
+
+th {
+    background-color: rgb(200, 200, 200);
+    color: rgb(80, 80, 80);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#item {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+audio {
+    position: relative;
+    height: 30px;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 2ch;
+}
+
+#doge {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 5px;
+}
+
+[display="flex-vertical-wrap"] {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px
+}
+
+[display="grid"] {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px
+}
+
+@media (width: 480px) {
+    body {
+        background-color: hsla(201, 100%, 83%, 1);
+    }
+}

@@ -6,49 +6,59 @@
     <meta name="description" content="Template meeting minutes">
     <meta name="author" content="Aiden Chen">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="next" href="./">
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
     <main>
       <nav>
-        <h1>Index</h1>
-        <a href="#meeting_info">Meeting Information</a> <br>
-        <a href="#attendees">Attendees</a> <br>
-        <a href="#agenda">Agenda Items</a> <br>
-        <a href="#last_items">Items From Last Meeting</a> <br>
-        <a href="#new_items">New Items</a> <br>
-        <a href="#miscellaneous">Miscellaneous</a> <br>
-        <a href="#images">Images</a> <br>
-        <a href="#recordings">Recordings</a> <br>
-        <a href="#pthers">Other Notes & Information</a> <br>
+        <img id="doge" src="doge.png" alt="doge" width="160">
+        <h1>Meeting Minutes</h1>
+        <hr>
+        <div class="container">
+          <a href="#meeting_info">Meeting Information</a> <br>
+          <a href="#attendees">Attendees</a> <br>
+          <a href="#agenda">Agenda Items</a> <br>
+          <a href="#last_items">Items From Last Meeting</a> <br>
+          <a href="#new_items">New Items</a> <br>
+          <a href="#miscellaneous">Miscellaneous</a> <br>
+          <a href="#images">Images</a> <br>
+          <a href="#recordings">Recordings</a> <br>
+          <a href="#others">Other Notes & Information</a> <br>
+        </div>
       </nav>
       <header>
         <h2 id="meeting_info">Meeting Information</h2>
-          <div><strong>Title: </strong><b>meeting_title</b></div>
-          <div><strong>Purpose: </strong>meeting_purpose</div>
-          <div><strong>Date/Time: </strong><i>meeting_date, meeting_time</i></div>
-          <div><strong>Location: </strong>meeting_location</div>
-          <div><strong>Note Taker: </strong>note_taker</div>
+        <hr>
+          <div>
+            <div class="short"><strong>Title: </strong><b>meeting_title</b></div>
+            <div class="short"><strong>Purpose: </strong>meeting_purpose</div>
+            <div class="short"><strong>Date/Time: </strong><i>meeting_date, meeting_time</i></div>
+            <div class="short"><strong>Location: </strong>meeting_location</div>
+            <div class="short"><strong>Note Taker: </strong>note_taker</div>
+          </div>
       </header>
       <section>
-        <hr>
         <h2 id="attendees">Attendees</h2>
-          <ul>
+        <hr>
+          <ul display="grid">
             <li>Person A</li>
             <li>Person B</li>
             <li>Person C</li>
+            <li>Person C</li>
+            <li>Person C</li>
+            <li>Person C</li>
           </ul>
-        <hr>
       </section>
       <section>
         <h2 id="agenda">Agenda Items</h2>
+        <hr>
           <table>
             <tr>
               <th>Item</th>
               <th>Description</th>
             </tr>
             <tr>
-              <td>Agenda Item 1</td>
+              <td id="item">Agenda Item 1</td>
               <td>
                 <ul>
                   <li></li>
@@ -58,7 +68,7 @@
               </td>
             </tr>
             <tr>
-              <td>Agenda Item 2</td>
+              <td id="item">Agenda Item 2</td>
               <td>
                 <ol>
                   <li></li>
@@ -69,16 +79,16 @@
             </tr>
           </table>
       </section>
-      <hr>
       <section>
         <h2 id="last_items">Items From Last Meeting</h2>
+        <hr>
           <table>
             <tr>
               <th>Item</th>
               <th>Description</th>
             </tr>
             <tr>
-              <td>Item 1</td>
+              <td id="item">Item 1</td>
               <td>
                 <ul>
                   <li></li>
@@ -88,7 +98,7 @@
               </td>
             </tr>
             <tr>
-              <td>Item 2</td>
+              <td id="item">Item 2</td>
               <td>
                 <ul>
                   <li></li>
@@ -99,16 +109,16 @@
             </tr>
           </table>
       </section>
-      <hr>
       <section>
         <h2 id="new_items">New Items</h2>
+        <hr>
           <table>
             <tr>
               <th>Item</th>
               <th>Description</th>
             </tr>
             <tr>
-              <td>Item 1</td>
+              <td id="item">Item 1</td>
               <td>
                 <ul>
                   <li></li>
@@ -118,7 +128,7 @@
               </td>
             </tr>
             <tr>
-              <td>Item 2</td>
+              <td id="item">Item 2</td>
               <td>
                 <ul>
                   <li></li>
@@ -129,9 +139,9 @@
             </tr>
           </table>
       </section>
-      <hr>
       <section>
         <h2 id="miscellaneous">Miscellaneous</h2>
+        <hr>
           <details>
               <summary>Items</summary>
             <table>
@@ -140,7 +150,7 @@
                 <th>Description</th>
               </tr>
               <tr>
-                <td>Item 1</td>
+                <td id="item">Item 1</td>
                 <td>
                   <ul>
                     <li></li>
@@ -150,7 +160,7 @@
                 </td>
               </tr>
               <tr>
-                <td>Item 2</td>
+                <td id="item">Item 2</td>
                 <td>
                   <ul>
                     <li></li>
@@ -162,14 +172,16 @@
             </table>
           </details>
       </section>
-      <hr>
       <section>
         <h2 id="images">Images</h2>
-          <img src="./screenshots/screen_shot.png" alt="img1" width="300">
-          <img src="img2.jpeg" alt="img2" width="300">
-          <img src="img3.jpeg" alt="img3" width="300">
         <hr>
+          <div display="grid">
+            <img src="./screenshots/screen_shot.png" alt="img1" width="300">
+            <img src="img2.jpeg" alt="img2" width="300">
+            <img src="img3.jpeg" alt="img3" width="300">
+          </div>
         <h2 id="recordings">Recordings</h2>
+        <hr>
           <audio controls>
             <source src="sample_audio.mp3" type="audio/mp3">
             Your browser does not support the audio tag.
@@ -180,9 +192,9 @@
             Your browser does not support the video tag.
           </video>
       </section>
-      <hr>
       <footer>
         <h3 id="others"><em>Other Notes & Information</em></h3>
+        <hr>
           <p>Some sample notes.</p>
           <br>
       </footer>
